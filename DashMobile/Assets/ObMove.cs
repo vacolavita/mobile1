@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class ObMove : MonoBehaviour
 {
+    private Rigidbody obRb;
     // Start is called before the first frame update
     void Start()
     {
-        
+        obRb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -17,5 +18,7 @@ public class ObMove : MonoBehaviour
         if (transform.position.z < -20) {
             Destroy(gameObject);
         }
+
+
     }
 }

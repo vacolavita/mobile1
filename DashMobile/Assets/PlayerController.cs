@@ -143,6 +143,7 @@ public class PlayerController : MonoBehaviour
         {
             SpeedManager.gameOver = true;
             SpeedManager.speed = 0;
+            Destroy(gameObject);
         }
     }
 }
